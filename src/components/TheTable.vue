@@ -17,7 +17,6 @@ const delBtnFunc = (params) => {
   button.className = "btn-simple";
   button.textContent = "Удалить";
   const eventListener = () => {
-    console.log(params);
     emit("deleteUser", {
       name: params.data.name.first,
       gender: params.data.gender,
